@@ -2,21 +2,23 @@
 .SH "NAME"
 rsstail \- a console RSS reader that monitors feeds and outputs new entries
 .SH "SYNOPSIS"
-.PP 
-\fBrsstail\fR [\fBOPTIONS\fB]... \fB\-u\fB URL 
+.PP
+\fBrsstail\fR [\fBOPTIONS\fB]... \fB\-u\fB URL
 .SH "DESCRIPTION"
-.PP 
-This manual page was written for the \fBDebian\fP distribution 
-because the original program does not have a manual page. 
-.PP 
+.PP
+This manual page was written for the \fBDebian\fP distribution
+because the original program does not have a manual page.
+.PP
 
-rsstail fetches RSS feeds from specified URLs and outputs them continuously, 
+rsstail fetches RSS feeds from specified URLs and outputs them continuously,
 much like \fBtail -f\fB does with files.
 .SH "OPTIONS"
-.PP 
-Options can be given in any order. Options that don't have an argument can be 
+.PP
+Options can be given in any order. Options that don't have an argument can be
 combined after a single dash.
- 
+
+.IP "\fB\-t\fP" 10
+Do not show the title. Requires one of {-l|-e|-d|-p|-a|-c|-g}
 .IP "\fB\-t\fP" 10
 Show a timestamp of when the item was processed
 .IP "\fB\-l\fP" 10
@@ -38,7 +40,7 @@ Do not show headings
 .IP "\fB\-b X\fB" 10
 Limit description and comments to \fBX\fB bytes
 .IP "\fB\-z\fB" 10
-Continue even if there are XML parser errors in the RSS 
+Continue even if there are XML parser errors in the RSS
 feed
 .IP "\fB\-Z string\fB" 10
 Output user-specified string before all the other headings
@@ -64,18 +66,18 @@ Do not exit when an error occurs
 One shot mode: check the feeds for new items, print them out and exit
 .IP "\fB\-v\fB" 10
 Be verbose (repeat to increase verbosity)
-.IP "\fB\-h\fP" 10 
+.IP "\fB\-h\fP" 10
 Show options and their descriptions
-.IP "\fB\-V\fP" 10 
+.IP "\fB\-V\fP" 10
 Show version of the program
 .SH "AUTHOR"
-.PP 
-This manual page was written by Rene Mayorga <rmayorga@debian.org.sv> for 
-the \fBDebian\fP system (but may be used by others).  Permission is 
-granted to copy, distribute and/or modify this document under 
-the terms of the GNU General Public License, Version 2 or any later version 
-published by the Free Software Foundation. 
- 
-.PP 
-On Debian systems, the complete text of the GNU General Public 
-License can be found in /usr/share/common\-licenses/GPL. 
+.PP
+This manual page was written by Rene Mayorga <rmayorga@debian.org.sv> for
+the \fBDebian\fP system (but may be used by others).  Permission is
+granted to copy, distribute and/or modify this document under
+the terms of the GNU General Public License, Version 2 or any later version
+published by the Free Software Foundation.
+
+.PP
+On Debian systems, the complete text of the GNU General Public
+License can be found in /usr/share/common\-licenses/GPL.
